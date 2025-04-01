@@ -29,5 +29,5 @@ jobs:
         echo line2
     - name: echo inputs
       run: |
-        ehco ${{inputs.name}}
-        ehco ${{inputs.environment}}
+        echo ${{inputs.name}}
+        echo ${{inputs.environment}}
