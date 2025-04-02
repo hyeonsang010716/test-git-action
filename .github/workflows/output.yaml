@@ -18,4 +18,4 @@ jobs:
     needs: [create-output]
     steps:
       - name: get-output
-        run: echo ${{ steps.output-id1.outputs.test }}
+        run: echo ${{ needs.output-id1.outputs.test }}
