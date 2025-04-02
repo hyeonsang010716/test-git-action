@@ -17,6 +17,5 @@ jobs:
     runs-on: ubuntu-latest
     needs: [create-output]
     steps:
-      - name: get-output 
-        run: |
-          echo ${{ steps.output-id1.outputs.test }}
+      - name: get-output
+        run: echo ${{ steps.output-id1.outputs.test }}
