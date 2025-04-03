@@ -1,0 +1,30 @@
+name: string-function
+on: push
+
+jobs:
+  string-function:
+    runs-on: ubuntu-latest
+    steps:
+    - name: startswith 1
+      if: startswith('github actions', 'git')
+      run: echo "test"
+
+    - name: startswith 2
+      if: startswith('github actions', 'test')
+      run: echo "test"
+
+    - name: endswith 1
+      if: endswith('github actions', 'ions')
+      run: echo "test"
+
+    - name: endswith 2
+      if: endswith('github actions', 'test')
+      run: echo "test"
+
+    - name: contains 1
+      if: contains('github actions', 'act')
+      run: ehco "test"
+
+    - name: contains 2
+      if: contains('github, actions', 'act')
+      run: ehco "test"
