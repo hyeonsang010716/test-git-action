@@ -23,8 +23,8 @@ jobs:
 
     - name: contains 1
       if: contains('github actions', 'act')
-      run: ehco "test"
+      run: echo "test"
 
     - name: contains 2
       if: contains('github, actions', 'act')
-      run: ehco "test"
+      run: echo "test"
